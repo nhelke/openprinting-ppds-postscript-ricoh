@@ -4,7 +4,7 @@ post_install() {
     if grep init /proc/1/comm > /dev/null; then
         /etc/rc.d/cupsd restart > /dev/null && echo "done"
     else
-        systemctl restart cups.service > /dev/null && echo "done"
+        systemctl restart org.cups.cupsd.service > /dev/null && echo "done"
     fi
 }
 
