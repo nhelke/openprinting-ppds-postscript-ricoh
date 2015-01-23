@@ -9,7 +9,7 @@ license=('MIT')
 depends=('cups' 'cups-filters' 'ghostscript')
 conflicts=(ppd-ricoh)
 install=ricoh.install
-source=('https://www.openprinting.org/download/printdriver/components/lsb3.2/main/RPMS/noarch/openprinting-ppds-postscript-ricoh-20140829-1lsb3.2.noarch.rpm')
+source=("https://www.openprinting.org/download/printdriver/components/lsb3.2/main/RPMS/noarch/openprinting-ppds-postscript-ricoh-$pkgver-1lsb3.2.noarch.rpm")
 
 package() {
   install -d $pkgdir/usr/share/cups/model/ $pkgdir/opt/OpenPrinting-Ricoh/doc
